@@ -24,6 +24,8 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import it.fast4x.rimusic.R
@@ -109,14 +111,15 @@ private fun AppLogoText( navController: NavController ) {
 
 
 
-    Button(
-        iconId = R.drawable.app_logo_text,
-        color = AppBar.contentColor(),
-        padding = 0.dp,
-        size = 36.dp,
-        forceWidth = 100.dp,
+    BasicText(
+        text = "DJ Capuchino",
+        style = TextStyle(
+            color = AppBar.contentColor(),
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold
+        ),
         modifier = Modifier.clickable { iconTextClick() }
-    ).Draw()
+    )
 }
 
 
