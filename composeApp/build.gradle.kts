@@ -132,7 +132,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "it.fast4x.rimusic"
+        applicationId = "com.jershonzablov.djcapuchino"
         minSdk = 21
         targetSdk = 35
         versionCode = 89
@@ -381,7 +381,7 @@ android {
             vcsInfo.include = false
             isMinifyEnabled = true
             isShrinkResources = true
-            manifestPlaceholders["appName"] = "RiMusic"
+            manifestPlaceholders["appName"] = "DJ Capuchino"
             signingConfig = signingConfigs.getByName("debug")
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
