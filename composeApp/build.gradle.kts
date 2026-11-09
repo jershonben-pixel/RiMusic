@@ -374,7 +374,7 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
-            manifestPlaceholders["appName"] = "RiMusic-Debug"
+            manifestPlaceholders["appName"] = "DJ Capuchino"
         }
 
         release {
